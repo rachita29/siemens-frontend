@@ -1,5 +1,15 @@
 # SchoolExamApp
 
+
+## High-Level Design
+Frontend: Angular for UI, Angular Material for styling.
+
+## Frontend Setup
+
+1. Navigate to the frontend directory.
+2. Install dependencies: npm install
+3. Start the development server: ng serve
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.7.
 
 ## Development server

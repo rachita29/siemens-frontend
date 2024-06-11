@@ -1,0 +1,36 @@
+<div class="student-home-container">
+  <mat-toolbar>
+    Student's Screen
+  </mat-toolbar>
+  <mat-card>
+    <mat-card-title>Take Exam</mat-card-title>
+    <mat-card-content>
+      <mat-form-field appearance="fill">
+        <mat-label>Class ID</mat-label>
+        <input matInput #classId>
+      </mat-form-field>
+      <button mat-raised-button color="primary" (click)="takeExam(classId.value)">Take Exam</button>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card>
+  <ol>
+  <li *ngFor="let question of questions">
+    <ol><h4>{{ question.question }}</h4></ol>
+    <ul>
+      <li *ngFor="let option of question.options">
+        <input type="radio" [id]="option._id" [name]="question._id" [value]="option._id">
+        <label [for]="option._id">{{ option.text }}</label>
+      </li>
+    </ul>
+  </li>
+  </ol>
+
+</mat-card>
+  <mat-card>
+    <mat-card-title>Generate PDF</mat-card-title>
+    <mat-card-content>
+      <button mat-raised-button color="primary" (click)="generatePdf()">Generate PDF</button>
+    </mat-card-content>
+  </mat-card>
+</div>

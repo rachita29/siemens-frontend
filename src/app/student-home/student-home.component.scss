@@ -1,0 +1,31 @@
+.student-home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+mat-card {
+  width: 600px;
+  margin: 20px;
+  padding: 20px;
+}
+
+
+mat-form-field {
+  margin-inline: 20px;
+}
+
+button {
+  margin: auto;
+  margin-left: 20px;
+}
+
+mat-card-title {
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+ol ul {
+  list-style-type: none;
+}
