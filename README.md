@@ -1,11 +1,23 @@
 # SchoolExamApp
+====================
+## Description
+  1. ## { path: 'login', component: LoginComponent } 
+  Redirects to login component: user gets authenticated if correct credentials are provided and gets redirected either to student-home or teacher-home depending on the role selected during registration
+
+  2. ## { path: 'register', component: RegisterComponent }
+  Redirects to registration component: user needs to fill basic details to register
+
+  3. ## { path: 'teacher-home', component: TeacherHomeComponent }
+  Redirects to teacher's component: Home screen for examiner/teacher, user with role as teacher can add classes and subject and upload question bank as csv in the application
+  
+  4. ## { path: 'student-home', component: StudentHomeComponent }
+  Redirects to student's component: Home screen for student, user with role as student can view question bank and see results as pdf in the application
 
 
 ## High-Level Design
 Frontend: Angular for UI, Angular Material for styling.
 
 ## Frontend Setup
-
 1. Navigate to the frontend directory.
 2. Install dependencies: npm install
 3. Start the development server: ng serve
